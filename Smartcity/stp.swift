@@ -5,23 +5,23 @@
 //  Created by Quentin 🕺🏽 on 24/09/2025.
 //
 
-
 import SwiftUI
 import MapKit
 
 struct Stp: View {
-    @State private var cameraPosition = MapCameraPosition.region(
-        MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 46.603354, longitude: 1.888334),
-            span: MKCoordinateSpan(latitudeDelta: 5.0, longitudeDelta: 5.0)
-        )
-    )
+    @StateObject private var service = RadarService()
     
     var body: some View {
-        VStack {
-            Map(position: $cameraPosition) {}
-            .ignoresSafeArea()
-            
+        Map {
+            ForEach(service.radars) { radar in
+                Annotation("\(radar.speed)", coordinate: CLLocationCoordinate2D(latitude: radar.lat, longitude: radar.lon)) {
+                    Text("🚨")
+                        .font(.title)
+                }
+            }
+        }
+        .onAppear {
+            service.getRadars()
         }
     }
 }

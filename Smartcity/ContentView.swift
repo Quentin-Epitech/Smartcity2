@@ -13,24 +13,19 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 40)
                 
-                NavigationLink(destination: Map()) {
+                NavigationLink(destination: Stp()) {
                     Text("Entrer")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
                         .frame(width: 200)
                         .background(Color.black)
-                        .cornerRadius(12)
-                        .shadow(radius: 5)}}
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(.systemGray6))
-            .ignoresSafeArea()
-        }
-    }
-}
+                        .cornerRadius(12)}}
+            .frame(maxWidth: .infinity, maxHeight: .infinity)}}}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()}}
+
 
 

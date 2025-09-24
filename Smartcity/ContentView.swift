@@ -1,24 +1,36 @@
-//
-//  ContentView.swift
-//  Smartcity
-//
-//  Created by Quentin 🕺🏽 on 24/09/2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(spacing: 20) {
+                Text("RadarGoat 🐐")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Text("L'application qui ressence tout les radars de France.")
+                    .font(.body)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 40)
+                
+                NavigationLink(destination: Map()) {
+                    Text("Entrer")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 200)
+                        .background(Color.black)
+                        .cornerRadius(12)
+                        .shadow(radius: 5)}}
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(.systemGray6))
+            .ignoresSafeArea()
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
-}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()}}
+
+

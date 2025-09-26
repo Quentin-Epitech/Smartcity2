@@ -39,9 +39,6 @@ struct Stp: View {
                         VStack {
                             Text("👮🏻‍♀️")
                                 .font(.caption)
-                            Text("\(radar.speed)")
-                                .font(.caption2)
-                                .foregroundColor(.red)
                         }
                     }
                 }

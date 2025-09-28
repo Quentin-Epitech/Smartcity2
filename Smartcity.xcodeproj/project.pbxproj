@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		66AFE8042E899F8D00C8C353 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 66AFE8032E899F8A00C8C353 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		662634692E83E8030009F88B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		662634582E83E8020009F88B /* Smartcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		662634682E83E8030009F88B /* SmartcityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartcityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		662634722E83E8030009F88B /* SmartcityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartcityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66AFE8032E899F8A00C8C353 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		6626344F2E83E8020009F88B = {
 			isa = PBXGroup;
 			children = (
+				66AFE8032E899F8A00C8C353 /* README.md */,
 				6626345A2E83E8020009F88B /* Smartcity */,
 				6626346B2E83E8030009F88B /* SmartcityTests */,
 				662634752E83E8030009F88B /* SmartcityUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AFE8042E899F8D00C8C353 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

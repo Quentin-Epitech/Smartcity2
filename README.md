@@ -12,7 +12,7 @@
 
 1. Faire un **git clone** :  
    ```bash
-   git clone https://github.com/Quentin-Epitech/Data-prediction.git
+   git clone https://github.com/Quentin-Epitech/Smartcity2.git
 
 ## Utilisation
 
